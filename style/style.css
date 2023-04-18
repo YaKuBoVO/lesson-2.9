@@ -1,0 +1,166 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   outline: none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: .3s linear;
+}
+.container  {
+   width: 1240px;
+   max-width: 100%;
+   background: linear-gradient(180deg, blueviolet, #B8BA41FF);
+   padding: 0 20px;
+   padding-bottom: 6%;
+}
+.container .heading {
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 25px;
+   color: #ccc;
+   text-shadow: 0 5px 10px rgba(0,0,0,.2);
+   font-size: 50px;
+}
+.container .grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   padding: 10px 10px;
+   padding-bottom: 21px;
+   gap: 15px;
+   justify-content: center;
+   background: #fff;
+}
+.container .grid .taomlar  {
+   border-radius: 8px;
+   text-align: center;
+   padding-bottom: 15px;
+   overflow: hidden;
+}
+.container .grid .taomlar img {
+   width: 250px;
+   height: 160px;
+   border-radius: 5px;
+}
+.container .grid .taomlar h2 {
+   color: #C9CB6EFF;
+   font-size: 22px;
+   padding: 12px 0;
+}
+.container .grid .taomlar p {
+   color: #777;
+   font-size: 14px;
+   line-height: 1.5;
+}
+.container .grid .taomlar .btn {
+   margin-top: 10px;
+   display: inline-block;
+   background: #333;
+   color: #fff;
+   font-size: 17px;
+   border-radius: 5px;
+   padding: 8px 25px;
+}
+.container .grid .taomlar .btn:hover {
+   letter-spacing: 1px;
+}
+.container .grid .taomlar:hover {
+   box-shadow: 0 5px 10px rgba(0,0,0,.2);
+   transform: scale(1.03);
+}
+
+
+@media only screen and (max-width: 1024px) {
+   .container {
+      width: 1024px;
+   }
+}
+
+
+@media only screen and (max-width: 961px) {
+   .container {
+      width: 961px;
+      padding: 0 130px;
+   }
+   .container .grid {
+    grid-template-columns: 1fr;
+    background: #ddd;
+   }
+   .container .gridd {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+   .grid .gridd {
+      background: #fff;
+   }
+   .container .grid .taomlar img {
+      width: 260px;
+      height: 200px;
+      margin: 5px 5px;
+   }
+   .container .grid .taomlar p {
+      padding-right: 20px;
+   }
+   .container .heading  {
+      padding-top: 20px;
+   }
+  
+}
+
+@media only screen and (max-width: 769px) {
+   .container {
+      width: 769px;
+      padding: 0 40px;
+   }
+   .container .grid .taomlar p {
+      padding-right: 20px;
+   }
+}
+ 
+
+@media only screen and (max-width: 540px) {
+   .container {
+      width: 540px;
+      padding: 0 80px;
+   }
+   .container .grid {
+      grid-template-columns: auto;
+      background: #ccc;
+     }
+     .container .gridd {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+     }
+
+   .container .grid .taomlar img {
+      width: 250px;
+      height: 230px;
+      justify-self: center;
+   }
+   .container .grid .taomlar p {
+      justify-self: center;
+   }
+}
+
+@media only screen and (max-width: 426px) {
+   .container {
+      width: 426px;
+      padding: 0 40px;
+   }
+   .container .grid .taomlar img {
+      width: 275px;
+      height: 230px;
+   }
+}
+
+@media only screen and (max-width: 376px) {
+   .container {
+      width: 376px;
+      padding: 0 5px;
+   }
+   .container .grid .taomlar img {
+      width: 305px;
+      height: 200px;
+   }
+}
